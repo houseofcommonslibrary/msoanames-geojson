@@ -1,4 +1,4 @@
-# Functions to merge data on MSOA Names with polygons and points
+# Functions to merge MSOA Names data with polygons and points
 
 # Imports ---------------------------------------------------------------------
 
