@@ -61,7 +61,11 @@ merge_names_with_polygons <- function() {
             msoanames, 
             by = "msoa11cd")
     
-    polygons_out <- toJSON(polygons)
+    polygons_out <- toJSON(
+        polygons, 
+        digits = 6,
+        auto_unbox = TRUE)
+    
     write_file(polygons_out, POLYGONS_OUT)
 }
 
@@ -81,7 +85,10 @@ merge_names_with_points <- function() {
             msoanames, 
             by = "msoa11cd")
     
-    points_out <- toJSON(points)
+    points_out <- toJSON(
+        points, 
+        digits = 6,
+        auto_unbox = TRUE)
     write_file(points_out, POINTS_OUT)
 }
 
