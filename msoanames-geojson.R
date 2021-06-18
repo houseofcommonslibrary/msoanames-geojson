@@ -89,6 +89,7 @@ merge_names_with_points <- function() {
         points, 
         digits = 6,
         auto_unbox = TRUE)
+
     write_file(points_out, POINTS_OUT)
 }
 
